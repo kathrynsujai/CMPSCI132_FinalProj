@@ -50,8 +50,12 @@ def number_guessing_game():
 
     if not status:
         print(f"Sorry, you're out of attempts. The number was {rand_num}.")
-        
+    
+replay = "Yes"
+while replay == "Yes" or replay == "yes":
+    number_guessing_game()
+    replay = input("Would you like to play again? (Yes/No): ")
+
+print("Thank you for playing!")
             
-#Run Game
-number_guessing_game()
         
